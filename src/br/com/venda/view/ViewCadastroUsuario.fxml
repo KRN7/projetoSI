@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="252.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.venda.view.ViewCadastroUsuarioController">
+    <center>
+        <Pane prefHeight="252.0" prefWidth="850.0">
+            <children>
+                <VBox alignment="TOP_CENTER" prefHeight="310.0" prefWidth="813.0" spacing="10.0" style="-fx-background-color: #3d3d3d;">
+                    <children>
+                        <Pane prefHeight="88.0" prefWidth="743.0" style="-fx-background-color: #3d3d3d;">
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <children>
+                                <Label layoutX="4.0" layoutY="4.0" text="informaçoes: conta" textFill="WHITE" />
+                                <HBox alignment="CENTER" focusTraversable="true" layoutY="26.0" prefHeight="68.0" prefWidth="782.0" spacing="10.0">
+                                    <children>
+                                        <JFXTextField fx:id="tflogin" focusColor="#1ed760" labelFloat="true" prefHeight="24.0" prefWidth="283.0" promptText="login" style="-fx-text-fill: black;" />
+                                        <JFXPasswordField fx:id="tfsenha" focusColor="#1ed760" labelFloat="true" prefWidth="283.0" promptText="senha" style="-fx-text-fill: black;" />
+                                    </children>
+                                    <padding>
+                                        <Insets top="10.0" />
+                                    </padding>
+                                </HBox>
+                            </children>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </Pane>
+                        <Pane prefHeight="88.0" prefWidth="723.0" style="-fx-background-color: #3d3d3d;">
+                            <children>
+                                <Label layoutX="4.0" layoutY="4.0" text="informaçoes: funcionario" textFill="WHITE" />
+                                <HBox alignment="TOP_CENTER" focusTraversable="true" layoutY="26.0" prefHeight="48.0" prefWidth="781.0" spacing="10.0">
+                                    <children>
+                                        <JFXTextField fx:id="tfnome" focusColor="#1ed760" labelFloat="true" prefHeight="24.0" prefWidth="283.0" promptText="nome" style="-fx-text-fill: black;" />
+                                        <JFXTextField fx:id="tfcpf" focusColor="#1ed760" labelFloat="true" prefHeight="25.0" prefWidth="283.0" promptText="cpf" />
+                                    </children>
+                                    <padding>
+                                        <Insets top="10.0" />
+                                    </padding>
+                                </HBox>
+                            </children>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </Pane>
+                        <JFXButton buttonType="RAISED" onAction="#cadastrar" prefHeight="30.0" prefWidth="280.0" style="-fx-background-color: #1ed760#1ed760;" text="cadastrar" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin></JFXButton>
+                    </children>
+                    <padding>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </VBox>
+            </children>
+        </Pane>
+    </center>
+</BorderPane>
